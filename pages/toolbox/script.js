@@ -35,9 +35,9 @@ function createToolCard(tool) {
 
     const categoryName = categoryMap[tool.category] || tool.category;
 
-    // 判断 icon 是否为 SVG 文件路径
+    // 判断 icon 是否为图片文件路径（SVG 或 PNG）
     let iconHTML = '';
-    if (tool.icon.endsWith('.svg')) {
+    if (tool.icon.endsWith('.svg') || tool.icon.endsWith('.png')) {
         iconHTML = `<img src="${tool.icon}" alt="${tool.name}" class="tool-icon-img">`;
     } else {
         iconHTML = `<div class="tool-icon">${tool.icon}</div>`;

@@ -23,7 +23,7 @@ const tools = [
         id: 3,
         name: 'Windsurf',
         category: 'dev',
-        icon: '🌊',
+        icon: 'assets/icons/windsurf.svg',
         description: 'AI代码编辑器，智能编程助手',
         downloadUrl: 'https://codeium.com/windsurf',
         docUrl: '#'
@@ -50,7 +50,7 @@ const tools = [
         id: 6,
         name: 'WinMerge',
         category: 'dev',
-        icon: '🔍',
+        icon: 'assets/icons/WinMergeLogo.png',
         description: '文件对比工具，代码审查必备',
         downloadUrl: 'https://winmerge.org/',
         docUrl: '#'
@@ -108,7 +108,7 @@ const tools = [
         id: 12,
         name: 'Typora',
         category: 'productivity',
-        icon: 'assets/icons/Typora.svg',
+        icon: 'assets/icons/Typora/icon_512x512.png',
         description: '简洁优雅的Markdown编辑器',
         downloadUrl: 'https://typora.io/',
         docUrl: '#'
@@ -164,7 +164,7 @@ const tools = [
         id: 18,
         name: 'Listary',
         category: 'system',
-        icon: '⚡',
+        icon: 'assets/icons/Listary.svg',
         description: '快速启动和文件搜索工具',
         downloadUrl: 'https://www.listary.com/',
         docUrl: '#'
@@ -173,7 +173,7 @@ const tools = [
         id: 19,
         name: 'DISM++',
         category: 'system',
-        icon: '🧹',
+        icon: 'assets/icons/DISM++logo.png',
         description: '系统清理和优化工具',
         downloadUrl: 'https://www.chuyu.me/zh-Hans/',
         docUrl: '#'
@@ -191,7 +191,7 @@ const tools = [
         id: 21,
         name: 'Quicker',
         category: 'system',
-        icon: '⏱️',
+        icon: 'assets/icons/Quicker.svg',
         description: '效率提升工具，快捷操作',
         downloadUrl: 'https://getquicker.net/',
         docUrl: '#'
@@ -202,7 +202,7 @@ const tools = [
         id: 22,
         name: 'IDM',
         category: 'other',
-        icon: '⬇️',
+        icon: 'assets/icons/idman_logos.png',
         description: '强大的下载管理器',
         downloadUrl: 'https://www.internetdownloadmanager.com/',
         docUrl: '#'
@@ -229,7 +229,7 @@ const tools = [
         id: 25,
         name: 'Proxifier',
         category: 'other',
-        icon: '🔗',
+        icon: 'assets/icons/proxifier.svg',
         description: '全局代理工具',
         downloadUrl: 'https://www.proxifier.com/',
         docUrl: '#'
