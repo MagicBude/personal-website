@@ -5,7 +5,7 @@ const tools = [
         id: 1,
         name: 'VSCode',
         category: 'dev',
-        icon: '💻',
+        icon: '/assets/icons/vscode.svg',
         description: '轻量级代码编辑器，功能强大，扩展丰富',
         downloadUrl: 'https://code.visualstudio.com/',
         docUrl: '#'
@@ -14,7 +14,7 @@ const tools = [
         id: 2,
         name: 'Git',
         category: 'dev',
-        icon: '🔀',
+        icon: '/assets/icons/git.svg',
         description: '分布式版本控制系统，开发必备',
         downloadUrl: 'https://git-scm.com/',
         docUrl: '#'
@@ -61,7 +61,7 @@ const tools = [
         id: 7,
         name: 'Chrome',
         category: 'browser',
-        icon: '🌐',
+        icon: '/assets/icons/chrome.svg',
         description: '谷歌浏览器，性能优秀，扩展丰富',
         downloadUrl: 'https://www.google.com/chrome/',
         docUrl: '#'
@@ -70,7 +70,7 @@ const tools = [
         id: 8,
         name: 'Firefox',
         category: 'browser',
-        icon: '🦊',
+        icon: '/assets/icons/firefox.svg',
         description: '开源浏览器，隐私保护能力强',
         downloadUrl: 'https://www.mozilla.org/firefox/',
         docUrl: '#'
@@ -79,7 +79,7 @@ const tools = [
         id: 9,
         name: 'Microsoft Edge',
         category: 'browser',
-        icon: '🔵',
+        icon: '/assets/icons/Edge.svg',
         description: '微软浏览器，与Windows深度集成',
         downloadUrl: 'https://www.microsoft.com/edge',
         docUrl: '#'
@@ -88,7 +88,7 @@ const tools = [
         id: 10,
         name: 'Opera',
         category: 'browser',
-        icon: '🎭',
+        icon: '/assets/icons/opera.svg',
         description: '轻量级浏览器，内置VPN和广告拦截',
         downloadUrl: 'https://www.opera.com/',
         docUrl: '#'
@@ -97,7 +97,7 @@ const tools = [
         id: 11,
         name: 'Yandex',
         category: 'browser',
-        icon: '🔴',
+        icon: '/assets/icons/yandex.svg',
         description: '俄罗斯浏览器，基于Chromium内核',
         downloadUrl: 'https://browser.yandex.com/',
         docUrl: '#'
@@ -108,7 +108,7 @@ const tools = [
         id: 12,
         name: 'Typora',
         category: 'productivity',
-        icon: '📝',
+        icon: '/assets/icons/Typora.svg',
         description: '简洁优雅的Markdown编辑器',
         downloadUrl: 'https://typora.io/',
         docUrl: '#'
@@ -117,7 +117,7 @@ const tools = [
         id: 13,
         name: 'Obsidian',
         category: 'productivity',
-        icon: '🧠',
+        icon: '/assets/icons/obsidian.svg',
         description: '强大的笔记管理和知识库工具',
         downloadUrl: 'https://obsidian.md/',
         docUrl: '#'
@@ -126,7 +126,7 @@ const tools = [
         id: 14,
         name: 'Notion',
         category: 'productivity',
-        icon: '📋',
+        icon: '/assets/icons/notion.svg',
         description: '一体化工作空间，笔记、数据库、看板',
         downloadUrl: 'https://www.notion.so/',
         docUrl: '#'
@@ -135,7 +135,7 @@ const tools = [
         id: 15,
         name: 'WPS Office',
         category: 'productivity',
-        icon: '📊',
+        icon: '/assets/icons/wps.svg',
         description: '国产办公套件，兼容性强',
         downloadUrl: 'https://www.wps.cn/',
         docUrl: '#'
@@ -144,7 +144,7 @@ const tools = [
         id: 16,
         name: 'LibreOffice',
         category: 'productivity',
-        icon: '📄',
+        icon: '/assets/icons/libreoffice.svg',
         description: '开源办公套件，功能完整',
         downloadUrl: 'https://www.libreoffice.org/',
         docUrl: '#'
@@ -155,7 +155,7 @@ const tools = [
         id: 17,
         name: 'Everything',
         category: 'system',
-        icon: '🔎',
+        icon: '/assets/icons/Everything.svg',
         description: '极速文件搜索工具',
         downloadUrl: 'https://www.voidtools.com/',
         docUrl: '#'
@@ -220,7 +220,7 @@ const tools = [
         id: 24,
         name: 'Clash',
         category: 'other',
-        icon: '🌍',
+        icon: '/assets/icons/clash.svg',
         description: '网络代理工具',
         downloadUrl: 'https://github.com/Dreamacro/clash',
         docUrl: '#'
@@ -238,7 +238,7 @@ const tools = [
         id: 26,
         name: 'Telegram',
         category: 'other',
-        icon: '💬',
+        icon: '/assets/icons/telegram.svg',
         description: '安全的即时通讯应用',
         downloadUrl: 'https://telegram.org/',
         docUrl: '#'
