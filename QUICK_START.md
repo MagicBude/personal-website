@@ -4,21 +4,22 @@
 
 ### 1️⃣ 推送代码（1分钟）
 ```bash
-cd d:\personal-website
+cd d:\GitHub\personal-website
 git add .
 git commit -m "初始化：个人网站"
-git push
+git push origin main
 ```
 
 ### 2️⃣ 启用Pages（2分钟）
-1. 访问 https://gitee.com/MagicBude/personal-website
-2. 点击 **服务** → **Gitee Pages**
-3. 选择分支：`master`，目录：`/`
-4. 点击 **启动**
+1. 访问 https://github.com/MagicBude/personal-website
+2. 点击 **Settings** → **Pages**
+3. Source 选择 **Deploy from a branch**
+4. 选择分支：`main`
+5. 点击 **Save**
 
 ### 3️⃣ 访问网站（1分钟）
 ```
-https://magicbude.gitee.io/personal-website
+https://magicbude.github.io/personal-website
 ```
 
 ### 4️⃣ 本地预览（1分钟）
@@ -233,8 +234,8 @@ http://localhost:8000
 
 ---
 
-**网站地址**: https://magicbude.gitee.io/personal-website
+**网站地址**: https://magicbude.github.io/personal-website
 
-**仓库地址**: https://gitee.com/MagicBude/personal-website
+**仓库地址**: https://github.com/MagicBude/personal-website
 
 **最后更新**: 2025-12-09

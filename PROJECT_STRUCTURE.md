@@ -168,24 +168,24 @@ npx http-server -p 8000
 
 ## 📦 部署
 
-### Gitee Pages部署步骤
+### GitHub Pages部署步骤
 
 1. **推送代码**
    ```bash
    git add .
    git commit -m "初始化：个人网站"
-   git push
+   git push origin main
    ```
 
 2. **启用Pages**
-   - 访问Gitee仓库
-   - 点击"服务" → "Gitee Pages"
-   - 选择分支：`master`
-   - 部署目录：`/`
-   - 点击"启动"
+   - 访问GitHub仓库
+   - 点击 Settings → Pages
+   - Source 选择 "Deploy from a branch"
+   - 选择分支：`main`
+   - 点击 Save
 
 3. **访问网站**
-   - 地址：`https://username.gitee.io/personal-website`
+   - 地址：`https://magicbude.github.io/personal-website`
 
 ## 🔄 后续扩展
 

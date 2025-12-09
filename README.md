@@ -61,12 +61,14 @@ npx http-server -p 8000
 ### 修改样式
 编辑 `css/variables.css` 中的CSS变量来改变网站风格。
 
-## 🌐 部署到Gitee Pages
+## 🌐 部署到GitHub Pages
 
-1. 在Gitee上创建仓库
-2. 克隆到本地
-3. 推送代码
-4. 启用Gitee Pages
+1. 在GitHub上创建仓库
+2. 推送代码
+3. 进入 Settings → Pages
+4. 选择 "Deploy from a branch"
+5. 选择 main 分支
+6. 访问 `https://magicbude.github.io/personal-website`
 
 ## 📄 许可证
 

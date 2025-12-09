@@ -61,12 +61,14 @@ Edit `index.html`:
 ### Change Website Style
 Edit `css/variables.css` to modify CSS variables.
 
-## 🌐 Deploy to Gitee Pages
+## 🌐 Deploy to GitHub Pages
 
-1. Create a repository on Gitee
-2. Clone to local
-3. Push code
-4. Enable Gitee Pages
+1. Create a repository on GitHub
+2. Push code
+3. Go to Settings → Pages
+4. Select "Deploy from a branch"
+5. Select main branch
+6. Visit `https://magicbude.github.io/personal-website`
 
 ## 📚 Documentation
 
