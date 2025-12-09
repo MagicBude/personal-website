@@ -6,93 +6,184 @@
     <title>个人网站 - 工具库、博客、作品集</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="pages/toolbox/styles.css">
+    <link rel="stylesheet" href="pages/blog/styles.css">
+    <link rel="stylesheet" href="pages/portfolio/styles.css">
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="container">
-            <a href="./" class="logo">🚀 MagicBude</a>
+            <a href="#home" class="logo">🚀 MagicBude</a>
             <ul class="nav-links">
-                <li><a href="./">首页</a></li>
-                <li><a href="pages/toolbox/">工具库</a></li>
-                <li><a href="pages/blog/">博客</a></li>
-                <li><a href="pages/portfolio/">作品集</a></li>
-                <li><a href="#contact">联系</a></li>
+                <li><a href="#home" class="nav-link" data-page="home">首页</a></li>
+                <li><a href="#toolbox" class="nav-link" data-page="toolbox">工具库</a></li>
+                <li><a href="#blog" class="nav-link" data-page="blog">博客</a></li>
+                <li><a href="#portfolio" class="nav-link" data-page="portfolio">作品集</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero 区域 -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>欢迎来到我的个人网站</h1>
-                <p>探索工具库、阅读技术文章、查看项目作品</p>
-                <div class="hero-buttons">
-                    <a href="pages/toolbox/" target="_blank" class="btn btn-primary">进入工具库</a>
-                    <a href="pages/blog/" target="_blank" class="btn btn-secondary">阅读博客</a>
+    <!-- 首页内容 -->
+    <div id="home" class="page active">
+        <!-- Hero 区域 -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>欢迎来到我的个人网站</h1>
+                    <p>探索工具库、阅读技术文章、查看项目作品</p>
+                    <div class="hero-buttons">
+                        <a href="#toolbox" class="btn btn-primary" data-page="toolbox">进入工具库</a>
+                        <a href="#blog" class="btn btn-secondary" data-page="blog">阅读博客</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- 模块预览 -->
-    <section class="modules">
-        <div class="container">
-            <h2>功能模块</h2>
-            <div class="modules-grid">
-                <!-- 工具库模块 -->
-                <div class="module-card">
-                    <div class="module-icon">🛠️</div>
-                    <h3>工具库</h3>
-                    <p>精选开发工具、浏览器、生产力工具等资源，提供详细的使用说明和官方下载链接。</p>
-                    <a href="pages/toolbox/" target="_blank" class="module-link">进入工具库 →</a>
-                </div>
+        <!-- 模块预览 -->
+        <section class="modules">
+            <div class="container">
+                <h2>功能模块</h2>
+                <div class="modules-grid">
+                    <!-- 工具库模块 -->
+                    <div class="module-card">
+                        <div class="module-icon">🛠️</div>
+                        <h3>工具库</h3>
+                        <p>精选开发工具、浏览器、生产力工具等资源，提供详细的使用说明和官方下载链接。</p>
+                        <a href="#toolbox" class="module-link" data-page="toolbox">进入工具库 →</a>
+                    </div>
 
-                <!-- 博客模块 -->
-                <div class="module-card">
-                    <div class="module-icon">📝</div>
-                    <h3>博客</h3>
-                    <p>分享技术文章、学习笔记和开发心得。涵盖Web开发、嵌入式开发等多个领域。</p>
-                    <a href="pages/blog/" target="_blank" class="module-link">阅读博客 →</a>
-                </div>
+                    <!-- 博客模块 -->
+                    <div class="module-card">
+                        <div class="module-icon">📝</div>
+                        <h3>博客</h3>
+                        <p>分享技术文章、学习笔记和开发心得。涵盖Web开发、嵌入式开发等多个领域。</p>
+                        <a href="#blog" class="module-link" data-page="blog">阅读博客 →</a>
+                    </div>
 
-                <!-- 作品集模块 -->
-                <div class="module-card">
-                    <div class="module-icon">🎨</div>
-                    <h3>作品集</h3>
-                    <p>展示个人项目和案例，包括Web应用、嵌入式项目、工具开发等。</p>
-                    <a href="pages/portfolio/" target="_blank" class="module-link">查看作品 →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 关于部分 -->
-    <section class="about">
-        <div class="container">
-            <h2>关于我</h2>
-            <div class="about-content">
-                <p>这是一个个人网站，用来展示我的工具收藏、技术文章和项目作品。</p>
-                <p>如果你对我的工具库感兴趣，或者想了解我的技术方向，欢迎浏览各个模块。</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 联系部分 -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>联系方式</h2>
-            <div class="contact-content">
-                <p>如果你有任何建议或想交流，欢迎通过以下方式联系我！</p>
-                <div class="contact-links">
-                    <a href="mailto:magicbude1998@gmail.com?subject=来自个人网站的联系&body=你好，我想与你联系..." target="_blank" class="contact-link">📧 邮件</a>
-                    <a href="https://github.com/MagicBude" target="_blank" class="contact-link">🐙 GitHub</a>
-                    <a href="https://gitee.com/MagicBude" target="_blank" class="contact-link">📚 Gitee</a>
+                    <!-- 作品集模块 -->
+                    <div class="module-card">
+                        <div class="module-icon">🎨</div>
+                        <h3>作品集</h3>
+                        <p>展示个人项目和案例，包括Web应用、嵌入式项目、工具开发等。</p>
+                        <a href="#portfolio" class="module-link" data-page="portfolio">查看作品 →</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- 关于部分 -->
+        <section class="about">
+            <div class="container">
+                <h2>关于我</h2>
+                <div class="about-content">
+                    <p>这是一个个人网站，用来展示我的工具收藏、技术文章和项目作品。</p>
+                    <p>如果你对我的工具库感兴趣，或者想了解我的技术方向，欢迎浏览各个模块。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系部分 -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>联系方式</h2>
+                <div class="contact-content">
+                    <p>如果你有任何建议或想交流，欢迎通过以下方式联系我！</p>
+                    <div class="contact-links">
+                        <a href="mailto:magicbude1998@gmail.com?subject=来自个人网站的联系&body=你好，我想与你联系..." target="_blank" class="contact-link">📧 邮件</a>
+                        <a href="https://github.com/MagicBude" target="_blank" class="contact-link">🐙 GitHub</a>
+                        <a href="https://gitee.com/MagicBude" target="_blank" class="contact-link">📚 Gitee</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 工具库页面 -->
+    <div id="toolbox" class="page">
+        <section class="toolbox-hero">
+            <div class="container">
+                <h1>工具库</h1>
+                <p>精选高效的开发工具、系统工具和日常应用</p>
+            </div>
+        </section>
+
+        <section class="tools">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">全部</button>
+                    <button class="filter-btn" data-filter="dev">开发工具</button>
+                    <button class="filter-btn" data-filter="browser">浏览器</button>
+                    <button class="filter-btn" data-filter="productivity">生产力</button>
+                    <button class="filter-btn" data-filter="system">系统工具</button>
+                    <button class="filter-btn" data-filter="other">其他</button>
+                </div>
+
+                <div class="tools-grid" id="toolsGrid">
+                    <!-- 工具卡片将由JavaScript动态生成 -->
+                </div>
+            </div>
+        </section>
+
+        <section id="toolbox-contact" class="contact">
+            <div class="container">
+                <h2>有建议？</h2>
+                <div class="contact-content">
+                    <p>如果你有任何建议或想分享好用的工具，欢迎联系我！</p>
+                    <div class="contact-links">
+                        <a href="mailto:magicbude1998@gmail.com?subject=工具库建议&body=你好，我想分享一个好用的工具..." target="_blank" class="contact-link">📧 发送邮件</a>
+                        <a href="https://github.com/MagicBude" target="_blank" class="contact-link">🐙 GitHub</a>
+                        <a href="https://gitee.com/MagicBude" target="_blank" class="contact-link">📚 Gitee</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 博客页面 -->
+    <div id="blog" class="page">
+        <section class="blog-hero">
+            <div class="container">
+                <h1>博客</h1>
+                <p>分享技术文章、学习笔记和开发心得</p>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <div class="container">
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">📝</div>
+                    <h2>敬请期待</h2>
+                    <p>博客模块正在开发中，即将为您呈现精彩的技术文章和学习笔记。</p>
+                    <p>包括 Web 开发、嵌入式开发、工具开发等多个领域的内容。</p>
+                    <a href="#home" class="btn btn-primary" data-page="home">返回首页</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 作品集页面 -->
+    <div id="portfolio" class="page">
+        <section class="portfolio-hero">
+            <div class="container">
+                <h1>作品集</h1>
+                <p>展示个人项目和案例分享</p>
+            </div>
+        </section>
+
+        <section class="portfolio-content">
+            <div class="container">
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">🎨</div>
+                    <h2>敬请期待</h2>
+                    <p>作品集模块正在开发中，即将为您展示精彩的项目和案例。</p>
+                    <p>包括 Web 应用、嵌入式项目、工具开发等多个方向的作品。</p>
+                    <a href="#home" class="btn btn-primary" data-page="home">返回首页</a>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- 页脚 -->
     <footer class="footer">
@@ -102,6 +193,12 @@
         </div>
     </footer>
 
+    <!-- 脚本加载顺序：配置 → 管理器 → 工具库 → 初始化 -->
+    <script src="js/config.js"></script>
+    <script src="js/router-manager.js"></script>
     <script src="js/common.js"></script>
+    <script src="pages/toolbox/data.js"></script>
+    <script src="pages/toolbox/script.js"></script>
+    <script src="js/router.js"></script>
 </body>
 </html>
