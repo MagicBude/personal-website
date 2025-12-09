@@ -43,11 +43,12 @@
 
 /**
  * 联系方式网格布局
- * 桌面端显示 3 列，平板端显示 2 列，手机端显示 1 列
+ * 使用 auto-fit 自动适应屏幕宽度
+ * 每列最小 280px，自动计算能放多少列
  */
 .contact-methods {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin: 3rem 0;
 }
@@ -81,20 +82,37 @@
 
 /**
  * SVG 图标样式
- * GitHub 和 Gitee 使用官方 SVG 图标
+ * 所有官方图标：Gmail、GitHub、Gitee
  */
 .contact-method .method-icon svg {
     width: 48px;
     height: 48px;
-    color: #333;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 /**
- * 悬停时改变 SVG 图标颜色
+ * Gmail 和 GitHub 图标样式（黑色）
+ */
+.contact-method:nth-child(1) .method-icon svg,
+.contact-method:nth-child(2) .method-icon svg {
+    color: #333;
+}
+
+/**
+ * 悬停时改变 SVG 图标效果
+ * 添加阴影和放大效果
  */
 .contact-method:hover .method-icon svg {
-    color: #667eea;
+    filter: drop-shadow(0 0 8px rgba(102, 126, 234, 0.6));
+    transform: scale(1.1);
+}
+
+/**
+ * Gitee 图标特殊处理
+ * 因为使用了官方红色，悬停时增强效果
+ */
+.contact-method:nth-child(3):hover .method-icon svg {
+    filter: drop-shadow(0 0 12px rgba(199, 29, 35, 0.8));
 }
 
 .contact-method h3 {
@@ -133,10 +151,10 @@
 
 /**
  * 响应式设计
- * 根据屏幕宽度调整布局
+ * 调整文字大小和间距以适应小屏幕
  */
 
-/* 平板设备（768px 以下） */
+/* 小屏幕设备（768px 以下） */
 @media (max-width: 768px) {
     .contact-hero h1 {
         font-size: 2rem;
@@ -146,9 +164,7 @@
         font-size: 1rem;
     }
 
-    /* 平板端显示 2 列 */
     .contact-methods {
-        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 
@@ -161,7 +177,7 @@
     }
 }
 
-/* 手机设备（480px 以下） */
+/* 超小屏幕设备（480px 以下） */
 @media (max-width: 480px) {
     .contact-hero h1 {
         font-size: 1.5rem;
@@ -171,9 +187,7 @@
         font-size: 0.9rem;
     }
 
-    /* 手机端显示 1 列 */
     .contact-methods {
-        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
