@@ -41,7 +41,7 @@ body {
 
 /**
  * Logo 样式
- * 包含 SVG 图标和文字
+ * 包含 SVG 图标和文字，完美对齐
  */
 .logo {
     font-size: 1.5rem;
@@ -51,17 +51,24 @@ body {
     transition: var(--transition);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
+    line-height: 1;
 }
 
 /**
  * Logo SVG 图标
+ * 与文字垂直居中对齐
  */
 .logo .logo-icon {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
     color: var(--primary-color);
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo:hover {

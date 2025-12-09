@@ -20,26 +20,55 @@
     opacity: 0.95;
 }
 
+/**
+ * Hero 区域按钮
+ * 两个按钮样式保持一致
+ */
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
 .hero-buttons .btn {
     padding: 14px 32px;
     font-size: var(--font-size-base);
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+    text-decoration: none;
+    display: inline-block;
 }
 
+/**
+ * 主按钮（进入工具库）
+ */
+.hero-buttons .btn-primary {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid white;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+/**
+ * 次按钮（阅读博客）
+ */
 .hero-buttons .btn-secondary {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: transparent;
     color: white;
     border: 2px solid white;
 }
 
 .hero-buttons .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: white;
+    color: var(--primary-color);
+    border-color: white;
 }
 
 /* 模块预览 */
