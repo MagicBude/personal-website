@@ -39,15 +39,36 @@ body {
     padding: 1rem 20px;
 }
 
+/**
+ * Logo 样式
+ * 包含 SVG 图标和文字
+ */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
     text-decoration: none;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/**
+ * Logo SVG 图标
+ */
+.logo .logo-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--primary-color);
+    transition: var(--transition);
 }
 
 .logo:hover {
+    color: var(--primary-dark);
+}
+
+.logo:hover .logo-icon {
     color: var(--primary-dark);
 }
 

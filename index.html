@@ -15,7 +15,13 @@
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="container">
-            <a href="#home" class="logo" data-page="home">🏠 MagicBude</a>
+            <a href="#home" class="logo" data-page="home">
+                <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Home 图标 -->
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+                <span>MagicBude</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link" data-page="home">首页</a></li>
                 <li><a href="#toolbox" class="nav-link" data-page="toolbox">工具库</a></li>
@@ -190,8 +196,12 @@
                         <!-- Gmail 官方图标 -->
                         <div class="contact-method">
                             <div class="method-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Gmail 红色背景 -->
+                                    <rect width="24" height="24" rx="4" fill="#EA4335"/>
+                                    <!-- 白色信封 -->
+                                    <path d="M4 6L12 11L20 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 6H20C21.1 6 22 6.9 22 8V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V8C2 6.9 2.9 6 4 6Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                                 </svg>
                             </div>
                             <h3>邮件</h3>
@@ -214,9 +224,11 @@
                         <!-- Gitee 官方图标 -->
                         <div class="contact-method">
                             <div class="method-icon gitee-icon">
-                                <svg width="48" height="48" viewBox="0 0 24 24">
+                                <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- 红色圆形背景 -->
                                     <circle cx="12" cy="12" r="12" fill="#C71D23"/>
-                                    <text x="12" y="16" font-size="14" font-weight="bold" fill="white" text-anchor="middle">G</text>
+                                    <!-- 白色 G 字 -->
+                                    <path d="M8.5 10C8.5 8.6 9.6 7.5 11 7.5C12.4 7.5 13.5 8.6 13.5 10V12H15V10C15 7.9 13.6 6.2 11.8 6C10.4 5.8 9.1 6.5 8.5 7.5C7.9 6.5 6.6 5.8 5.2 6C3.4 6.2 2 7.9 2 10V14C2 15.1 2.9 16 4 16H8.5V14H4V10H8.5V10Z" fill="white" transform="translate(2 2) scale(0.9)"/>
                                 </svg>
                             </div>
                             <h3>Gitee</h3>
