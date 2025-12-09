@@ -1,0 +1,208 @@
+@import url('../../css/variables.css');
+
+/* 工具库 Hero */
+.toolbox-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.toolbox-hero h1 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: 1rem;
+}
+
+.toolbox-hero p {
+    font-size: var(--font-size-lg);
+    opacity: 0.95;
+}
+
+/* 工具部分 */
+.tools {
+    padding: 60px 20px;
+}
+
+/* 过滤按钮 */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 2px solid var(--border-color);
+    background: white;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* 工具网格 */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* 工具卡片 */
+.tool-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: var(--transition);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.tool-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tool-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.tool-category {
+    display: inline-block;
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.tool-description {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.tool-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.tool-link {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.tool-link.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.tool-link.primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.tool-link.secondary {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    border: 1px solid var(--border-color);
+}
+
+.tool-link.secondary:hover {
+    background-color: var(--border-color);
+}
+
+/* 联系部分 */
+.contact {
+    padding: 60px 20px;
+    background-color: var(--light-color);
+}
+
+.contact h2 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content p {
+    font-size: var(--font-size-base);
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.contact-link:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .toolbox-hero h1 {
+        font-size: 2rem;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
