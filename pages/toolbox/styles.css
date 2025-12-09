@@ -197,6 +197,14 @@
     transform: translateY(-2px);
 }
 
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
     .toolbox-hero h1 {
