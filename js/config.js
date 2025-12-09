@@ -38,6 +38,13 @@ const APP_CONFIG = {
             name: '作品集',
             url: 'pages/portfolio/',
             spaUrl: '#portfolio'
+        },
+        contact: {
+            id: 'contact',
+            title: '联系方式',
+            name: '联系方式',
+            url: '#contact',
+            spaUrl: '#contact'
         }
     },
     

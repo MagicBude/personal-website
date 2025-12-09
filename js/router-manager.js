@@ -57,6 +57,7 @@ class RouterManager {
 
     /**
      * 处理导航链接点击（SPA 模式）
+     * 包括 Logo 点击和导航菜单点击
      */
     handleNavClick(e) {
         const link = e.target.closest('[data-page]');
