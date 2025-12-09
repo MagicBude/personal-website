@@ -63,9 +63,35 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+/**
+ * 联系方式图标样式
+ * 支持 emoji 和 SVG 图标
+ */
 .contact-method .method-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+/**
+ * SVG 图标样式
+ * GitHub 和 Gitee 使用官方 SVG 图标
+ */
+.contact-method .method-icon svg {
+    width: 48px;
+    height: 48px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/**
+ * 悬停时改变 SVG 图标颜色
+ */
+.contact-method:hover .method-icon svg {
+    color: #667eea;
 }
 
 .contact-method h3 {
