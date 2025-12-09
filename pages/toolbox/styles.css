@@ -78,6 +78,16 @@
 .tool-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.tool-icon-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
 }
 
 .tool-name {

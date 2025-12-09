@@ -35,8 +35,16 @@ function createToolCard(tool) {
 
     const categoryName = categoryMap[tool.category] || tool.category;
 
+    // 判断 icon 是否为 SVG 文件路径
+    let iconHTML = '';
+    if (tool.icon.endsWith('.svg')) {
+        iconHTML = `<img src="${tool.icon}" alt="${tool.name}" class="tool-icon-img">`;
+    } else {
+        iconHTML = `<div class="tool-icon">${tool.icon}</div>`;
+    }
+
     card.innerHTML = `
-        <div class="tool-icon">${tool.icon}</div>
+        <div class="tool-icon">${iconHTML}</div>
         <div class="tool-name">${tool.name}</div>
         <span class="tool-category">${categoryName}</span>
         <p class="tool-description">${tool.description}</p>
